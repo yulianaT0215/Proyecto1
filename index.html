@@ -1,12 +1,44 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Proyecto1</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-    
+    <section id="father">
+        <div id="nav-container">
+            <div id="nav-content">
+                <div id="icono-nav" onclick="responsiveMenu()">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+                <div id="nav-text">YULIANA TREJOS</div>
+                <div id="nav-text1">Perfil Personal</div>
+                <nav id="menu-arriba">
+                    <ul id="menu">
+                        <li><a href="#inicio" class="seleccionado" onclick="seleccionar(this)">INICIO</a></li>
+                        <li><a href="#sobremi" onclick="seleccionar(this)">SOBRE MI</a></li>
+                        <li><a href="#servicios" onclick="seleccionar(this)">SERVICIOS</a></li>
+                        <li><a href="#portfolio" onclick="seleccionar(this)">PORTFOLIO</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        function seleccionar(link) {
+            var links = document.querySelectorAll('#menu a');
+            links.forEach(l => l.classList.remove('seleccionado'));
+            link.classList.add('seleccionado');
+        }
+
+        function responsiveMenu() {
+            var menu = document.getElementById('menu');
+            menu.classList.toggle('visible');
+        }
+    </script>
 </body>
 </html>
