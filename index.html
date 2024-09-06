@@ -1,116 +1,183 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Proyecto1</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-</head>
-<body>
-    <section id="father">
-        <div id="nav-container">
-            <div id="nav-content">
-                <div id="icono-nav" onclick="responsiveMenu()">
-                    <i class="fa-solid fa-bars"></i>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Proyecto1</title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    </head>
+    <body>
+        <section id="padre">
+            <div id="nav">
+                <div id="contenido-nav">
+                    <div id="icono-nav" onclick="menuResp()">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+                    <div id="texto-nav">YULIANA TREJOS</div>
+                    <div id="subtexto-nav">Perfil Personal</div>
+                    <nav id="menu-superior">
+                        <ul id="menu">
+                            <li><a href="#inicio" class="seleccionado"
+                                    onclick="seleccionar(this)">INICIO</a></li>
+                            <li><a href="#sobremi"
+                                    onclick="seleccionar(this)">SOBRE MI</a></li>
+                            <li><a href="#estudios"
+                                    onclick="seleccionar(this)">ESTUDIOS</a></li>
+                            <li><a href="#contacto"
+                                    onclick="seleccionar(this)">CONTACTO</a></li>
+                        </ul>
+                    </nav>
                 </div>
-                <div id="nav-text">YULIANA TREJOS</div>
-                <div id="nav-text1">Perfil Personal</div>
-                <nav id="menu-arriba">
-                    <ul id="menu">
-                        <li><a href="#inicio" class="seleccionado" onclick="seleccionar(this)">INICIO</a></li>
-                        <li><a href="#sobremi" onclick="seleccionar(this)">SOBRE MI</a></li>
-                        <li><a href="#servicios" onclick="seleccionar(this)">SERVICIOS</a></li>
-                        <li><a href="#portfolio" onclick="seleccionar(this)">PORTFOLIO</a></li>
-                    </ul>
-                </nav>
+            </div>
+        </section>
+
+        <!-- Contenedor de información personal y imagen -->
+        <div id="info">
+            <div id="personal">
+                <h2>Información Personal</h2>
+                <p>Hola, soy Yuliana Andrea Trejos Bobadilla. Nací el 15 de
+                    julio de 2003 en Florencia, Caquetá, Colombia, y actualmente
+                    resido en Colombia. Estoy enfocada en el avance continuo de
+                    mi formación académica, donde me esfuerzo por mantener una
+                    actitud apasionada y perseverante. Durante mi tiempo libre,
+                    valoro la interacción con mi familia y busco constantemente
+                    oportunidades para adquirir nuevos conocimientos y
+                    habilidades. Mi objetivo es crecer de manera integral tanto
+                    en el ámbito personal como profesional.</p>
+                <button id="mas-info-btn">Más Información</button>
+            </div>
+            <div id="img">
+                <div id="img-personal">
+                    <img src="/WhatsApp Image 2024-09-05 at 6.11.05 AM.jpeg"
+                        alt="Imagen Personal">
+                </div>
             </div>
         </div>
-    </section>
 
-    <!-- Contenedor de información personal y imagen -->
-<div id="info-container">
-    <div id="personal-info">
-        <h2>Información Personal</h2>
-        <p>Hola, soy Yuliana Andrea Trejos Bobadilla. Nací el 15 de julio de 2003 en Florencia, Caquetá, Colombia, y actualmente resido en Colombia. Estoy enfocada en el avance continuo de mi formación académica, donde me esfuerzo por mantener una actitud apasionada y perseverante. Durante mi tiempo libre, valoro la interacción con mi familia y busco constantemente oportunidades para adquirir nuevos conocimientos y habilidades. Mi objetivo es crecer de manera integral tanto en el ámbito personal como profesional.</p>
-        <button id="more-info-btn">Más Información</button> <!-- Botón añadido -->
-    </div>
-    <div id="image-container-wrapper">
-        <div id="image-container">
-            <img src="/fondoInicio.jpg" alt="Imagen Personal">
-        </div>
-    </div>
-</div>
-<div id="academic-info">
-    <h2>Información Académica</h2>
-<div id="timeline-container">
-    <div class="timeline-item">
-        <div class="timeline-icon"></div>
-        <div class="timeline-content">
-            <h3>Basica Primaria</h3>
-            <p>Barrios Unidos Del Sur Sede Pueblo Nuevo</p>
-            <span class="date">2013</span>
-        </div>
-    </div>
-    <div class="timeline-item">
-        <div class="timeline-icon"></div>
-        <div class="timeline-content">
-            <h3>Basica Secundaria</h3>
-            <p>Instituto Tecnico Industrial</p>
-            <span class="date">2017</span>
-        </div>
-    </div>
-    <div class="timeline-item">
-        <div class="timeline-icon"></div>
-        <div class="timeline-content">
-            <h3>Media</h3>
-            <p>Instituto Tecnico Industrial</p>
-            <span class="date">2019</span>
-        </div>
-    </div>
-    </div>
-    <h2>Cursos</h2>
-<div id="timeline-container">
-    <div class="timeline-item">
-        <div class="timeline-icon"></div>
-        <div class="timeline-content">
-            <h3>Tecnico En Sistemas y Computacion</h3>
-            <p>Sena</p>
-            <span class="date">2019</span>
-        </div>
-    </div>
-    <div class="timeline-item">
-        <div class="timeline-icon"></div>
-        <div class="timeline-content">
-            <h3>NDG Linux Essentials
-                Cisco Networking Academy®</h3>
-            <p>cisco</p>
-            <span class="date">2022</span>
-        </div>
-    </div>
-    <div class="timeline-item">
-        <div class="timeline-icon"></div>
-        <div class="timeline-content">
-            <h3>Introducción a IoT
-                Cisco Networking Academy®</h3>
-            <p>Cisco</p>
-            <span class="date">2022</span>
-        </div>
-    </div>
-    </div>
-</div>
+        <div id="acad">
+            <h2>Información Académica</h2>
+            <div id="linea-tiempo">
+                <div class="item-linea">
+                    <div class="icono"></div>
+                    <div class="contenido">
+                        <h3>Basica Primaria</h3>
+                        <p>Barrios Unidos Del Sur Sede Pueblo Nuevo</p>
+                        <span class="fecha">2013</span>
+                    </div>
+                </div>
+                <div class="item-linea">
+                    <div class="icono"></div>
+                    <div class="contenido">
+                        <h3>Basica Secundaria</h3>
+                        <p>Instituto Tecnico Industrial</p>
+                        <span class="fecha">2017</span>
+                    </div>
+                </div>
+                <div class="item-linea">
+                    <div class="icono"></div>
+                    <div class="contenido">
+                        <h3>Media</h3>
+                        <p>Instituto Tecnico Industrial</p>
+                        <span class="fecha">2019</span>
+                    </div>
+                </div>
+            </div>
 
-    <script>
-        function seleccionar(link) {
-            var links = document.querySelectorAll('#menu a');
-            links.forEach(l => l.classList.remove('seleccionado'));
-            link.classList.add('seleccionado');
-        }
+            <h2>Cursos</h2>
+            <div id="linea-tiempo">
+                <div class="item-linea">
+                    <div class="icono"></div>
+                    <div class="contenido">
+                        <h3>Tecnico En Sistemas y Computacion</h3>
+                        <p>Sena</p>
+                        <span class="fecha">2019</span>
+                    </div>
+                </div>
+                <div class="item-linea">
+                    <div class="icono"></div>
+                    <div class="contenido">
+                        <h3>NDG Linux Essentials</h3>
+                        <p>Cisco</p>
+                        <span class="fecha">2022</span>
+                    </div>
+                </div>
+                <div class="item-linea">
+                    <div class="icono"></div>
+                    <div class="contenido">
+                        <h3>Introducción a IoT</h3>
+                        <p>Cisco</p>
+                        <span class="fecha">2022</span>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-        function responsiveMenu() {
-            var menu = document.getElementById('menu');
-            menu.classList.toggle('visible');
-        }
-    </script>
-</body>
+        <div id="hobbies">
+            <h4>Hobbies</h4>
+            <div class="grid-item">
+                <div class="inner">
+                    <div class="titulo">Leer</div>
+                    <div class="img-contenedor">
+                        <img src="/leer.jpg" alt="Imagen 1">
+                    </div>
+                </div>
+            </div>
+            <div class="grid-item">
+                <div class="inner">
+                    <div class="titulo">Escuchar Música</div>
+                    <div class="img-contenedor">
+                        <img src="/musica.jpg" alt="Imagen 2">
+                    </div>
+                </div>
+            </div>
+            <div class="grid-item">
+                <div class="inner">
+                    <div class="titulo">Montar Bicicleta</div>
+                    <div class="img-contenedor">
+                        <img src="/bici.jpg" alt="Imagen 3">
+                    </div>
+                </div>
+            </div>
+            <div class="grid-item">
+                <div class="inner">
+                    <div class="titulo">Acampar</div>
+                    <div class="img-contenedor">
+                        <img src="/acampar.jpg" alt="Imagen 4">
+                    </div>
+                </div>
+            </div>
+            <div class="grid-item">
+                <div class="inner">
+                    <div class="titulo">Visitar Lugares Antiguos</div>
+                    <div class="img-contenedor">
+                        <img src="/lugar.jpg" alt="Imagen 5">
+                    </div>
+                </div>
+            </div>
+            <div class="grid-item">
+                <div class="inner">
+                    <div class="titulo">Ríos</div>
+                    <div class="img-contenedor">
+                        <img src="/rios.jpg" alt="Imagen 6">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            function seleccionar(enlace) {
+                var enlaces = document.querySelectorAll('#menu a');
+                enlaces.forEach(l => l.classList.remove('seleccionado'));
+                enlace.classList.add('seleccionado');
+            }
+
+            function menuResp() {
+                var menu = document.getElementById('menu');
+                menu.classList.toggle('visible');
+            }
+        </script>
+    </body>
 </html>
+
