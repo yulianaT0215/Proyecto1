@@ -9,23 +9,24 @@
             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     </head>
     <body>
-        <section id="padre">
-            <div id="nav">
-                <div id="contenido-nav">
-                    <div id="icono-nav" onclick="menuResp()">
+        <section id="father">
+            <div id="nav-container">
+                <div id="nav-content">
+                    <div id="icono-nav" onclick="responsiveMenu()">
                         <i class="fa-solid fa-bars"></i>
                     </div>
-                    <div id="texto-nav">YULIANA TREJOS</div>
-                    <div id="subtexto-nav">Perfil Personal</div>
-                    <nav id="menu-superior">
+                    <div id="nav-text">YULIANA TREJOS</div>
+                    <div id="nav-text1">Perfil Personal</div>
+                    <nav id="menu-arriba">
                         <ul id="menu">
                             <li><a href="#inicio" class="seleccionado"
                                     onclick="seleccionar(this)">INICIO</a></li>
                             <li><a href="#sobremi"
-                                    onclick="seleccionar(this)">SOBRE MI</a></li>
-                            <li><a href="#estudios"
+                                    onclick="seleccionar(this)">SOBRE
+                                    MI</a></li>
+                            <li><a href="#servicios"
                                     onclick="seleccionar(this)">ESTUDIOS</a></li>
-                            <li><a href="#contacto"
+                            <li><a href="#portfolio"
                                     onclick="seleccionar(this)">CONTACTO</a></li>
                         </ul>
                     </nav>
@@ -34,8 +35,8 @@
         </section>
 
         <!-- Contenedor de información personal y imagen -->
-        <div id="info">
-            <div id="personal">
+        <div id="info-container">
+            <div id="personal-info">
                 <h2>Información Personal</h2>
                 <p>Hola, soy Yuliana Andrea Trejos Bobadilla. Nací el 15 de
                     julio de 2003 en Florencia, Caquetá, Colombia, y actualmente
@@ -46,120 +47,120 @@
                     oportunidades para adquirir nuevos conocimientos y
                     habilidades. Mi objetivo es crecer de manera integral tanto
                     en el ámbito personal como profesional.</p>
-                <button id="mas-info-btn">Más Información</button>
+                <button id="more-info-btn">Más Información</button>
+                <!-- Botón añadido -->
             </div>
-            <div id="img">
-                <div id="img-personal">
+            <div id="imagen-container">
+                <div id="image-container">
                     <img src="/WhatsApp Image 2024-09-05 at 6.11.05 AM.jpeg"
                         alt="Imagen Personal">
                 </div>
             </div>
         </div>
-
-        <div id="acad">
+        <div id="informacion">
             <h2>Información Académica</h2>
-            <div id="linea-tiempo">
-                <div class="item-linea">
-                    <div class="icono"></div>
-                    <div class="contenido">
+            <div id="timeline-container">
+                <div class="timeline-item">
+                    <div class="timeline-icon"></div>
+                    <div class="timeline-content">
                         <h3>Basica Primaria</h3>
                         <p>Barrios Unidos Del Sur Sede Pueblo Nuevo</p>
-                        <span class="fecha">2013</span>
+                        <span class="date">2013</span>
                     </div>
                 </div>
-                <div class="item-linea">
-                    <div class="icono"></div>
-                    <div class="contenido">
+                <div class="timeline-item">
+                    <div class="timeline-icon"></div>
+                    <div class="timeline-content">
                         <h3>Basica Secundaria</h3>
                         <p>Instituto Tecnico Industrial</p>
-                        <span class="fecha">2017</span>
+                        <span class="date">2017</span>
                     </div>
                 </div>
-                <div class="item-linea">
-                    <div class="icono"></div>
-                    <div class="contenido">
+                <div class="timeline-item">
+                    <div class="timeline-icon"></div>
+                    <div class="timeline-content">
                         <h3>Media</h3>
                         <p>Instituto Tecnico Industrial</p>
-                        <span class="fecha">2019</span>
+                        <span class="date">2019</span>
                     </div>
                 </div>
             </div>
-
             <h2>Cursos</h2>
-            <div id="linea-tiempo">
-                <div class="item-linea">
-                    <div class="icono"></div>
-                    <div class="contenido">
+            <div id="timeline-container">
+                <div class="timeline-item">
+                    <div class="timeline-icon"></div>
+                    <div class="timeline-content">
                         <h3>Tecnico En Sistemas y Computacion</h3>
                         <p>Sena</p>
-                        <span class="fecha">2019</span>
+                        <span class="date">2019</span>
                     </div>
                 </div>
-                <div class="item-linea">
-                    <div class="icono"></div>
-                    <div class="contenido">
-                        <h3>NDG Linux Essentials</h3>
-                        <p>Cisco</p>
-                        <span class="fecha">2022</span>
+                <div class="timeline-item">
+                    <div class="timeline-icon"></div>
+                    <div class="timeline-content">
+                        <h3>NDG Linux Essentials
+                            Cisco Networking Academy®</h3>
+                        <p>cisco</p>
+                        <span class="date">2022</span>
                     </div>
                 </div>
-                <div class="item-linea">
-                    <div class="icono"></div>
-                    <div class="contenido">
-                        <h3>Introducción a IoT</h3>
+                <div class="timeline-item">
+                    <div class="timeline-icon"></div>
+                    <div class="timeline-content">
+                        <h3>Introducción a IoT
+                            Cisco Networking Academy®</h3>
                         <p>Cisco</p>
-                        <span class="fecha">2022</span>
+                        <span class="date">2022</span>
                     </div>
                 </div>
             </div>
         </div>
-
-        <div id="hobbies">
+        <div id="grid-container">
             <h4>Hobbies</h4>
             <div class="grid-item">
-                <div class="inner">
-                    <div class="titulo">Leer</div>
-                    <div class="img-contenedor">
+                <div class="inner-container">
+                    <div class="title">Leer</div>
+                    <div class="image-container">
                         <img src="/leer.jpg" alt="Imagen 1">
                     </div>
                 </div>
             </div>
             <div class="grid-item">
-                <div class="inner">
-                    <div class="titulo">Escuchar Música</div>
-                    <div class="img-contenedor">
+                <div class="inner-container">
+                    <div class="title">Escuchar Musica</div>
+                    <div class="image-container">
                         <img src="/musica.jpg" alt="Imagen 2">
                     </div>
                 </div>
             </div>
             <div class="grid-item">
-                <div class="inner">
-                    <div class="titulo">Montar Bicicleta</div>
-                    <div class="img-contenedor">
+                <div class="inner-container">
+                    <div class="title">Montar Bicicleta</div>
+                    <div class="image-container">
                         <img src="/bici.jpg" alt="Imagen 3">
                     </div>
                 </div>
             </div>
             <div class="grid-item">
-                <div class="inner">
-                    <div class="titulo">Acampar</div>
-                    <div class="img-contenedor">
+                <div class="inner-container">
+                    <div class="title">Acampar</div>
+                    <div class="image-container">
                         <img src="/acampar.jpg" alt="Imagen 4">
                     </div>
                 </div>
             </div>
             <div class="grid-item">
-                <div class="inner">
-                    <div class="titulo">Visitar Lugares Antiguos</div>
-                    <div class="img-contenedor">
+                <div class="inner-container">
+                    <div class="title">Visitar lugares Antiguos</div>
+                    <div class="image-container">
                         <img src="/lugar.jpg" alt="Imagen 5">
                     </div>
                 </div>
             </div>
             <div class="grid-item">
-                <div class="inner">
-                    <div class="titulo">Ríos</div>
-                    <div class="img-contenedor">
+                <div class="inner-container">
+                    <div class="title">Rios</div>
+                    <div class="image-container">
                         <img src="/rios.jpg" alt="Imagen 6">
                     </div>
                 </div>
@@ -167,17 +168,16 @@
         </div>
 
         <script>
-            function seleccionar(enlace) {
-                var enlaces = document.querySelectorAll('#menu a');
-                enlaces.forEach(l => l.classList.remove('seleccionado'));
-                enlace.classList.add('seleccionado');
-            }
+        function seleccionar(link) {
+            var links = document.querySelectorAll('#menu a');
+            links.forEach(l => l.classList.remove('seleccionado'));
+            link.classList.add('seleccionado');
+        }
 
-            function menuResp() {
-                var menu = document.getElementById('menu');
-                menu.classList.toggle('visible');
-            }
-        </script>
+        function responsiveMenu() {
+            var menu = document.getElementById('menu');
+            menu.classList.toggle('visible');
+        }
+    </script>
     </body>
 </html>
-
