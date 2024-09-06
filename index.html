@@ -34,8 +34,7 @@
             </div>
         </section>
 
-        <!-- Contenedor de información personal y imagen -->
-        <div id="info-container">
+        <div id="contenedor-personal">
             <div id="personal-info">
                 <h2>Información Personal</h2>
                 <p>Hola, soy Yuliana Andrea Trejos Bobadilla. Nací el 15 de
@@ -47,8 +46,7 @@
                     oportunidades para adquirir nuevos conocimientos y
                     habilidades. Mi objetivo es crecer de manera integral tanto
                     en el ámbito personal como profesional.</p>
-                <button id="more-info-btn">Más Información</button>
-                <!-- Botón añadido -->
+                <button id="boton">Más Información</button>
             </div>
             <div id="imagen-container">
                 <div id="image-container">
@@ -59,9 +57,9 @@
         </div>
         <div id="informacion">
             <h2>Información Académica</h2>
-            <div id="timeline-container">
+            <div id="linea-Tiempo">
                 <div class="timeline-item">
-                    <div class="timeline-icon"></div>
+                    <div class="icono-linea"></div>
                     <div class="timeline-content">
                         <h3>Basica Primaria</h3>
                         <p>Barrios Unidos Del Sur Sede Pueblo Nuevo</p>
@@ -69,7 +67,7 @@
                     </div>
                 </div>
                 <div class="timeline-item">
-                    <div class="timeline-icon"></div>
+                    <div class="icono-linea"></div>
                     <div class="timeline-content">
                         <h3>Basica Secundaria</h3>
                         <p>Instituto Tecnico Industrial</p>
@@ -77,7 +75,7 @@
                     </div>
                 </div>
                 <div class="timeline-item">
-                    <div class="timeline-icon"></div>
+                    <div class="icono-linea"></div>
                     <div class="timeline-content">
                         <h3>Media</h3>
                         <p>Instituto Tecnico Industrial</p>
@@ -86,9 +84,9 @@
                 </div>
             </div>
             <h2>Cursos</h2>
-            <div id="timeline-container">
+            <div id="linea-Tiempo">
                 <div class="timeline-item">
-                    <div class="timeline-icon"></div>
+                    <div class="icono-linea"></div>
                     <div class="timeline-content">
                         <h3>Tecnico En Sistemas y Computacion</h3>
                         <p>Sena</p>
@@ -96,7 +94,7 @@
                     </div>
                 </div>
                 <div class="timeline-item">
-                    <div class="timeline-icon"></div>
+                    <div class="icono-linea"></div>
                     <div class="timeline-content">
                         <h3>NDG Linux Essentials
                             Cisco Networking Academy®</h3>
@@ -105,7 +103,7 @@
                     </div>
                 </div>
                 <div class="timeline-item">
-                    <div class="timeline-icon"></div>
+                    <div class="icono-linea"></div>
                     <div class="timeline-content">
                         <h3>Introducción a IoT
                             Cisco Networking Academy®</h3>
@@ -166,18 +164,32 @@
                 </div>
             </div>
         </div>
-
+        <div id="contenedor-contacto">
+            <h2>Información de Contacto</h2>
+            <div class="item-contacto">
+                <i class="fa-solid fa-envelope"></i>
+                <p>yuliana.trejos@gmail.com</p>
+            </div>
+            <div class="item-contacto">
+                <i class="fa-solid fa-phone"></i>
+                <p>3228296306</p>
+            </div>
+            <div class="item-contacto">
+                <i class="fa-solid fa-location-dot"></i>
+                <p>Florencia, Caquetá, Colombia</p>
+            </div>
+        </div>
         <script>
-        function seleccionar(link) {
-            var links = document.querySelectorAll('#menu a');
-            links.forEach(l => l.classList.remove('seleccionado'));
-            link.classList.add('seleccionado');
-        }
-
-        function responsiveMenu() {
-            var menu = document.getElementById('menu');
-            menu.classList.toggle('visible');
-        }
-    </script>
+            function seleccionar(link) {
+                var links = document.querySelectorAll('#menu a');
+                links.forEach(l => l.classList.remove('seleccionado'));
+                link.classList.add('seleccionado');
+            }
+    
+            function responsiveMenu() {
+                var menu = document.getElementById('menu');
+                menu.classList.toggle('visible');
+            }
+        </script>        
     </body>
 </html>
